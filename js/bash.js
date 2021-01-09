@@ -123,11 +123,11 @@ const runCowsay = (command, dir) => {
     let cow = " "+("_"*(text.length+2))+"\n"
     cow += "< "+text+" >\n"
     cow += " "+("-"*(text.length+2))+"\n"
-    cow += "        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||"
+    cow += "        \   ^__^ \n"
+    cow += "         \  (oo)\_______ \n"
+    cow += "            (__)\       )\/\ \n"
+    cow += "                ||----w | \n"
+    cow += "                ||     || \n"
     output(cow)
 }
 
