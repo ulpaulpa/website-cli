@@ -121,14 +121,14 @@ const runCat = (command, dir) => {
 const runCowsay = (command, dir) => {
     command.shift()
     let words = command.join()
-    let cow = " "+("_"*(words.length+2))+"<br>"
-    cow += "< "+words+" ><br>"
-    cow += " "+("-"*(words.length+2))+"<br>"
-    cow += "        \   ^__^ <br>"
-    cow += "         \  (oo)\_______ <br>"
-    cow += "            (__)\       )\/\ <br>"
-    cow += "                ||----w | <br>"
-    cow += "                ||     || <br>"
+    let cow = "<pre> "+("_"*(words.length+2))+"\n"
+    cow += "< "+words+" >\n"
+    cow += " "+("-"*(words.length+2))+"\n"
+    cow += "        \   ^__^ \n"
+    cow += "         \  (oo)\_______ \n"
+    cow += "            (__)\       )\/\ \n"
+    cow += "                ||----w | \n"
+    cow += "                ||     || </pre>"
     output(cow)
 }
 
