@@ -119,11 +119,11 @@ const runCat = (command, dir) => {
 };
 
 const runCowsay = (command, dir) => {
-    let text = command.shift()
-    text = text.join()
-    let cow = " "+("_"*(text.length+2))+"\n"
-    cow += "< "+text+" >\n"
-    cow += " "+("-"*(text.length+2))+"\n"
+    command.shift()
+    let words = command.join()
+    let cow = " "+("_"*(words.length+2))+"\n"
+    cow += "< "+words+" >\n"
+    cow += " "+("-"*(words.length+2))+"\n"
     cow += "        \   ^__^ \n"
     cow += "         \  (oo)\_______ \n"
     cow += "            (__)\       )\/\ \n"
